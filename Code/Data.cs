@@ -23,7 +23,7 @@ namespace HelloChat
 		{
 			while (true)
 			{
-				_ = Application.Current.Dispatcher.BeginInvoke(new Action<ChatGroup>(gr => Chats.Add(gr)), new ChatGroup());
+				_ = Application.Current?.Dispatcher.BeginInvoke(new Action<ChatGroup>(gr => Chats.Add(gr)), new ChatGroup());
 				Thread.Sleep(500);
 			}
 		}
