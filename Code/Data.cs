@@ -8,6 +8,7 @@ namespace HelloChat
 	public static class Database
 	{
 		public static ObservableCollection<ChatGroup> Chats;
+		public static readonly ChatGroup DummyChat = new() { GroupName = "Some cool Test-Group", UnreadCount = 88, LatestMessageText = "Hello everyone, this is my first message. Have fun!", LatestMessageDate = DateTime.Now };
 
 		static Database()
 		{
